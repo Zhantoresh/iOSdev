@@ -57,6 +57,9 @@
                                     <color key="baseForegroundColor" red="0.054901960784313725" green="0.066666666666666666" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.94901960784313721" green="0.69411764705882351" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="rouletteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I0r-ZO-3OG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ4-B0-KMC">
                                 <rect key="frame" x="24" y="66" width="345" height="24"/>
@@ -73,6 +76,7 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="3mh-Vv-KSC" id="zs1-le-hKm"/>
                         <outlet property="posterImageView" destination="4SH-3W-Ygo" id="04R-bz-g2O"/>
+                        <outlet property="rouletteButton" destination="By5-uU-XIi" id="5Os-PF-P9F"/>
                         <outlet property="titleLabel" destination="vFu-MM-t0z" id="V2d-fG-12E"/>
                         <outlet property="yearLabel" destination="dYT-3G-hLR" id="Xl2-Be-Pzs"/>
                     </connections>

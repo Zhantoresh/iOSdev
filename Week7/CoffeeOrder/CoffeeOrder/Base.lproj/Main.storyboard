@@ -18,7 +18,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup.and.heat.waves" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gck-1U-hZE">
                                 <rect key="frame" x="16" y="131.66666666666666" width="361" height="205.99999999999997"/>
-                                <color key="backgroundColor" name="Background"/>
+                                <color key="backgroundColor" name="ImageBackground"/>
                                 <color key="tintColor" name="CoffeeBrown"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gck-1U-hZE" secondAttribute="height" multiplier="16:9" id="OKS-Hg-4QR"/>
@@ -30,13 +30,32 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flat White" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaN-lp-RPu">
+                                <rect key="frame" x="16" y="353" width="132.33333333333334" height="33.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" name="TextPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="₸1 800" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09z-da-AE3">
+                                <rect key="frame" x="282" y="353" width="95" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" name="CoffeeBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="09z-da-AE3" secondAttribute="trailing" constant="16" id="1gS-6M-Elc"/>
                             <constraint firstItem="gck-1U-hZE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="YgU-ik-6Gg"/>
+                            <constraint firstItem="xaN-lp-RPu" firstAttribute="top" secondItem="gck-1U-hZE" secondAttribute="bottom" constant="16" id="ern-cQ-wja"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gck-1U-hZE" secondAttribute="trailing" constant="16" id="gcy-Ka-THZ"/>
+                            <constraint firstItem="xaN-lp-RPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="k7O-s3-Mti"/>
+                            <constraint firstItem="09z-da-AE3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xaN-lp-RPu" secondAttribute="trailing" constant="12" id="rg6-NB-29l"/>
                             <constraint firstItem="gck-1U-hZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sEn-eo-5lW"/>
+                            <constraint firstItem="xaN-lp-RPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sFG-PS-2Qm"/>
+                            <constraint firstItem="xaN-lp-RPu" firstAttribute="top" secondItem="gck-1U-hZE" secondAttribute="bottom" constant="16" id="xBZ-VM-Hs9"/>
+                            <constraint firstItem="09z-da-AE3" firstAttribute="firstBaseline" secondItem="xaN-lp-RPu" secondAttribute="firstBaseline" id="zF1-rq-oIC"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -52,6 +71,12 @@
         </namedColor>
         <namedColor name="CoffeeBrown">
             <color red="0.47843137254901963" green="0.29019607843137257" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ImageBackground">
+            <color red="0.91764705882352937" green="0.8666666666666667" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextPrimary">
+            <color red="0.10980392156862745" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

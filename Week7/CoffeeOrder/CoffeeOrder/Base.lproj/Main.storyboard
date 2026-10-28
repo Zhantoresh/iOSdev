@@ -105,6 +105,80 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7I-5W-GLY">
+                                <rect key="frame" x="16" y="555.66666666666663" width="361" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vn-3J-OSB">
+                                        <rect key="frame" x="16" y="21.666666666666742" width="69" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="TextPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3O-Zh-4qv">
+                                        <rect key="frame" x="219" y="10" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="96O-x6-9PQ"/>
+                                            <constraint firstAttribute="height" constant="44" id="qdt-J4-Bzm"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="-">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseForegroundColor" name="CoffeeBrown"/>
+                                            <color key="baseBackgroundColor" name="SoftFill"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0E-WS-h4B">
+                                        <rect key="frame" x="263" y="20" width="44" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Mkc-nv-5oi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" name="TextPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17A-nr-i06">
+                                        <rect key="frame" x="307" y="10" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="5bN-cO-pkh"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="da3-HV-1ee"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="+">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="baseForegroundColor" name="CoffeeBrown"/>
+                                            <color key="baseBackgroundColor" name="SoftFill"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="17A-nr-i06" secondAttribute="trailing" constant="10" id="BSF-AT-fDn"/>
+                                    <constraint firstItem="17A-nr-i06" firstAttribute="centerY" secondItem="B7I-5W-GLY" secondAttribute="centerY" id="HKb-37-jeq"/>
+                                    <constraint firstItem="5vn-3J-OSB" firstAttribute="centerY" secondItem="B7I-5W-GLY" secondAttribute="centerY" id="MOY-OG-0ac"/>
+                                    <constraint firstItem="5vn-3J-OSB" firstAttribute="leading" secondItem="B7I-5W-GLY" secondAttribute="leading" constant="16" id="Qwf-QE-DIx"/>
+                                    <constraint firstItem="l3O-Zh-4qv" firstAttribute="centerY" secondItem="B7I-5W-GLY" secondAttribute="centerY" id="TqB-i0-lza"/>
+                                    <constraint firstItem="l3O-Zh-4qv" firstAttribute="leading" secondItem="5vn-3J-OSB" secondAttribute="trailing" constant="134" id="h5e-9b-il5"/>
+                                    <constraint firstAttribute="height" constant="64" id="nnp-nw-5ng"/>
+                                    <constraint firstItem="17A-nr-i06" firstAttribute="leading" secondItem="U0E-WS-h4B" secondAttribute="trailing" id="qI7-Cv-6tA"/>
+                                    <constraint firstItem="U0E-WS-h4B" firstAttribute="centerY" secondItem="B7I-5W-GLY" secondAttribute="centerY" id="tv6-KP-CrD"/>
+                                    <constraint firstItem="U0E-WS-h4B" firstAttribute="leading" secondItem="l3O-Zh-4qv" secondAttribute="trailing" id="y6i-HT-B78"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Background"/>
@@ -114,6 +188,7 @@
                             <constraint firstItem="4PH-pZ-FCp" firstAttribute="top" secondItem="xaN-lp-RPu" secondAttribute="bottom" constant="8" id="3LM-gM-RB6"/>
                             <constraint firstItem="8zj-g2-LRa" firstAttribute="leading" secondItem="8rD-87-cFb" secondAttribute="trailing" constant="10" id="7bI-cq-CMZ"/>
                             <constraint firstItem="8zj-g2-LRa" firstAttribute="width" secondItem="8rD-87-cFb" secondAttribute="width" id="D5E-YY-DUa"/>
+                            <constraint firstItem="B7I-5W-GLY" firstAttribute="top" secondItem="8rD-87-cFb" secondAttribute="bottom" constant="24" id="Fga-dv-cjB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4PH-pZ-FCp" secondAttribute="trailing" constant="16" id="Fju-Di-H6X"/>
                             <constraint firstItem="8rD-87-cFb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KcV-qT-YpI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZPG-vV-6Gw" secondAttribute="trailing" constant="16" id="PCA-2E-xPZ"/>
@@ -125,8 +200,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gck-1U-hZE" secondAttribute="trailing" constant="16" id="gcy-Ka-THZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wW9-Kq-3Fx" secondAttribute="trailing" constant="16" id="hrI-i6-7bV"/>
                             <constraint firstItem="xaN-lp-RPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="k7O-s3-Mti"/>
+                            <constraint firstItem="B7I-5W-GLY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kI0-vM-dwN"/>
                             <constraint firstItem="4PH-pZ-FCp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="09z-da-AE3" secondAttribute="bottom" constant="8" id="l4z-fU-h4g"/>
                             <constraint firstItem="wW9-Kq-3Fx" firstAttribute="top" secondItem="4PH-pZ-FCp" secondAttribute="bottom" constant="24" id="nel-Fh-Am1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B7I-5W-GLY" secondAttribute="trailing" constant="16" id="oOE-8g-jBk"/>
                             <constraint firstItem="09z-da-AE3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xaN-lp-RPu" secondAttribute="trailing" constant="12" id="rg6-NB-29l"/>
                             <constraint firstItem="gck-1U-hZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sEn-eo-5lW"/>
                             <constraint firstItem="xaN-lp-RPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sFG-PS-2Qm"/>

@@ -23,15 +23,25 @@ struct Track {
 
 enum TrackLibrary {
     static let tracks: [Track] = [
-        Track(title: "Track 1", artist: "Artist 1", fileName: "track01.mp3", coverImageName: "track01Cover"),
-        Track(title: "Track 2", artist: "Artist 2", fileName: "track02.mp3", coverImageName: "track02Cover"),
-        Track(title: "Track 3", artist: "Artist 3", fileName: "track03.mp3", coverImageName: "track03Cover"),
-        Track(title: "Track 4", artist: "Artist 4", fileName: "track04.mp3", coverImageName: "track04Cover"),
-        Track(title: "Track 5", artist: "Artist 5", fileName: "track05.mp3", coverImageName: "track05Cover"),
-        Track(title: "Track 6", artist: "Artist 6", fileName: "track06.mp3", coverImageName: "track06Cover"),
-        Track(title: "Track 7", artist: "Artist 7", fileName: "track07.mp3", coverImageName: "track07Cover"),
-        Track(title: "Track 8", artist: "Artist 8", fileName: "track08.mp3", coverImageName: "track08Cover"),
-        Track(title: "Track 9", artist: "Artist 9", fileName: "track09.mp3", coverImageName: "track09Cover"),
-        Track(title: "Track 10", artist: "Artist 10", fileName: "track10.mp3", coverImageName: "track10Cover")
+        Track(title: "Annihilate", artist: "Metro Boomin, Swae Lee, Lil Wayne, Offset",
+              fileName: "annihilate.m4a", coverImageName: "annihilateCover"),
+        Track(title: "Center Mass", artist: "Twenty One Pilots",
+              fileName: "centerMass.m4a", coverImageName: "centerMassCover"),
+        Track(title: "The Emptiness Machine", artist: "Linkin Park",
+              fileName: "emptinessMachine.m4a", coverImageName: "emptinessMachineCover"),
+        Track(title: "Karma Police", artist: "Radiohead",
+              fileName: "karmaPolice.m4a", coverImageName: "karmaPoliceCover"),
+        Track(title: "KICK OUT", artist: "Travis Scott",
+              fileName: "kickOut.m4a", coverImageName: "kickOutCover"),
+        Track(title: "Lithonia", artist: "Childish Gambino",
+              fileName: "lithonia.m4a", coverImageName: "lithoniaCover"),
+        Track(title: "Mr. Solo Dolo III", artist: "Kid Cudi",
+              fileName: "mrSoloDoloIII.m4a", coverImageName: "mrSoloDoloIIICover"),
+        Track(title: "Reincarnated", artist: "Kendrick Lamar",
+              fileName: "reincarnated.m4a", coverImageName: "reincarnatedCover"),
+        Track(title: "Telekinesis", artist: "Travis Scott",
+              fileName: "telekinesis.m4a", coverImageName: "telekinesisCover"),
+        Track(title: "Timeless", artist: "The Weeknd, Playboi Carti",
+              fileName: "timeless.m4a", coverImageName: "timelessCover")
     ]
 }

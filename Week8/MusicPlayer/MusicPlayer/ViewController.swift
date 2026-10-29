@@ -94,7 +94,6 @@ class ViewController: UIViewController {
         do {
             let newPlayer = try AVAudioPlayer(contentsOf: url)
             newPlayer.delegate = self
-            newPlayer.prepareToPlay()
             player = newPlayer
         } catch {
             print("⚠️ Не удалось открыть \(track.fileName): \(error.localizedDescription)")
@@ -103,11 +102,14 @@ class ViewController: UIViewController {
 
     
     private func configureAudioSession() {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
-            print("⚠️ Не удалось настроить аудиосессию: \(error.localizedDescription)")
+        DispatchQueue.global(qos: .userInitiated).async {
+            let session = AVAudioSession.sharedInstance()
+            do {
+                try session.setCategory(.playback, mode: .default)
+                try session.setActive(true)
+            } catch {
+                print("⚠️ Не удалось настроить аудиосессию: \(error.localizedDescription)")
+            }
         }
     }
 
